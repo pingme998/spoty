@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sed "s|thesuperurl|$|g"
+sed -i "s|thesuperurl|$|g" 
