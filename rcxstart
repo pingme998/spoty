@@ -1,3 +1,2 @@
 #!/bin/bash
-ps -A >/ps.html
-rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/ps.html
+rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT)
