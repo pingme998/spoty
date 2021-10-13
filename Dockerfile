@@ -1,4 +1,4 @@
-FROM developeranaz/treasure-cloud-invite:2
+FROM developeranaz/treasure-cloud-invite:1
 #RUN apt install rclone -y
 RUN apt install supervisor -y
 COPY rcxstart /usr/bin/rcxstart
