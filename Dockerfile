@@ -1,4 +1,4 @@
-FROM developeranaz/treasure-cloud-invite
+FROM developeranaz/gecko-on-fire:latest
 #RUN apt install rclone -y
 RUN apt install supervisor -y
 COPY rcxstart /usr/bin/rcxstart
