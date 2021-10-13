@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "$LIVEURL" >/LIVEURL
+echo "$LIVEURL" >/theliveurl
 #cat /etc/supervisor/conf.d/supervisord.conf
 echo $PORT >/PORT
 /usr/bin/supervisord
