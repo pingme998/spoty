@@ -1,3 +1,5 @@
 #!/bin/bash
-git clone 
+chmod +x /*
+git clone https://github.com/pingme998/mypy
+cp /mypy/booy/* /
 python3 /start.py
