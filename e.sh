@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "$INVITEURL"
-sed -i "s|thesuperurl|$INVITEURL|g" /etc/supervisor/conf.d/supervisord.conf
-cat /etc/supervisor/conf.d/supervisord.conf
 echo $PORT >/PORT
-/usr/bin/supervisord
+
+jupyter notebook --ip=0.0.0.0 --port=$(cat /PORT) --NotebookApp.token='' --NotebookApp.password=''
