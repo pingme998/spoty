@@ -1,9 +1,11 @@
 FROM ubuntu
+RUN apt update -y
 #RUN apt install rclone -y
 RUN apt install supervisor -y
 RUN apt install python3 pip jupyter -y
 RUN pip install instaloader
 COPY rcxstart /usr/bin/rcxstart
+RUN apt install nginx -y
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 80
 COPY e.sh /e.sh
