@@ -1,0 +1,1 @@
+rclone rcd --rc-serve --rc-addr=127.0.0.1:5572
