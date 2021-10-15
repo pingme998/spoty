@@ -1,3 +1,3 @@
 #!/bin/bash
-ps -A >/ps.html
-rclone rcd --rc-serve --rc-addr=0.0.0.0:$(cat /PORT) --rc-template=/ps.html
+sed -i 's|therandomport|$(cat /PORT)|g' /etc/supervisor/conf.d/supervisord.conf
+nginx -g 'daemon off;'
