@@ -8,6 +8,7 @@ COPY rclon1 /usr/bin/rclon1
 COPY rclon2 /usr/bin/rclon2
 COPY rclon3 /usr/bin/rclon3
 COPY rclon4 /usr/bin/rclon4
+COPY default /etc/nginx/sites-enabled/default
 RUN chmod +x /usr/bin/rclon1
 RUN chmod +x /usr/bin/rclon2
 RUN chmod +x /usr/bin/rclon3
