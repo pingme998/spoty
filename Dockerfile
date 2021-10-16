@@ -1,6 +1,6 @@
 FROM developeranaz/aria2rclone:latest
-RUN d3v update -y
-RUN d3v install supervisor -y
+#RUN d3v update -y
+RUN pip install supervisor
 RUN cp /usr/bin/rc /usr/bin/rclone
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY rclon1 /usr/bin/rclon1
