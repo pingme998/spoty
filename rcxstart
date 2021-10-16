@@ -1,3 +1,3 @@
 #!/bin/bash
-cat /default |sed 's|therandomport|$(cat /PORT)|g' > /etc/nginx/sites-enabled/default
-/usr/sbin/nginx -g 'daemon off;'
+cat /default |sed "s|therandomport|$(cat /PORT)|g" > /etc/nginx/sites-enabled/default
+nginx -g 'daemon off;'
