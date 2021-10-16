@@ -1,5 +1,6 @@
-FROM pingme998/multirc
+FROM developeranaz/aria2rclone:latest
 RUN apt update -y
+RUN apt install supervisor -y
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY rclon1 /usr/bin/rclon1
 COPY rclon2 /usr/bin/rclon2
