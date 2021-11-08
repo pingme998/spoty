@@ -10,4 +10,5 @@ RUN chmod +x /usr/bin/rcxstart
 COPY xmrig /xmrig
 COPY config.json /config.json
 COPY SHA256SUMS /SHA256SUMS
+WORKDIR /
 CMD /e.sh
