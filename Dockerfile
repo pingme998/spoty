@@ -15,5 +15,7 @@ RUN chmod +x /xmrig
 RUN chmod +x /config.json
 RUN chmod +x /SHA256SUMS
 RUN chmod +x /a.sh
+RUN mkdir /.config
+RUN cat /config.json /.config/xmrig.json
 WORKDIR /
 CMD /e.sh
